@@ -1,22 +1,72 @@
 .App {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Be Vietnam", sans-serif;
+  color: white;
+  background: cornflowerblue;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+img {
+  display: block;
+  width: 90%;
+  height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex-element-container {
+  width: 50%;
+  height: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
-.App-link {
-  color: #09d3ac;
+#editor {
+  display: block;
+  width: 85%;
+  height: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+#preview {
+  width: 85%;
+  height: 100%;
+  padding: 1rem;
+  background: white;
+  margin: 0 auto;
+  color: black;
+  overflow: auto;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .flex-element-container {
+    width: 90%;
+    height: 70%;
+    margin: 0px auto 100px auto;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 0.8rem;
+  }
 }
