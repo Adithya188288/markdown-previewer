@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e7385e35-8e4f-4d4b-b195-141749d18994/deploy-status)](https://app.netlify.com/sites/mystifying-dijkstra-6d472b/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
